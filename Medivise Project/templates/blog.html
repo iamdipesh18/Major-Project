@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEDIVISE - Symptom-Based Disease Diagnosis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #8d03e9; /* Purple background */
+        color: #000; /* Black text for high contrast */
+      }
+      .container {
+        background-color: #fff; /* White background for the content area */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2, h3 {
+        color: #8d03e9; /* Purple for headers */
+      }
+      .lead {
+        font-size: 1.2rem;
+        color: #333; /* Dark gray for lead text */
+      }
+      ul li, ol li {
+        font-size: 1rem;
+        color: #333; /* Dark gray text for list items */
+      }
+      .list-group-item {
+        border: none;
+        background-color: transparent;
+        color: #333;
+        padding-left: 0;
+      }
+      .list-group-item strong {
+        color: #8d03e9; /* Purple for important items */
+      }
+      .btn-primary {
+        background-color: #8d03e9; /* Purple buttons */
+        border-color: #8d03e9;
+      }
+      .btn-primary:hover {
+        background-color: #7b02d1; /* Darker purple on hover */
+        border-color: #7b02d1;
+      }
+      .text-primary {
+        color: #8d03e9 !important;
+      }
+      .fw-bold {
+        font-weight: 700;
+      }
+      .mt-4, .my-5 {
+        margin-top: 30px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .container h2 {
+        font-size: 2.5rem; /* Bigger size for the main title */
+      }
+      .container h3 {
+        font-size: 1.75rem; /* Slightly larger size for sub-headings */
+      }
+      .container p {
+        font-size: 1.1rem; /* Increased font size for body text */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+        <h2 class="text-center text-primary fw-bold">MEDIVISE: AI-Powered Symptom-Based Disease Diagnosis</h2>
+        <p class="lead text-center">Bridging the gap between technology and healthcare with Machine Learning and Flask.</p>
+        
+        <h3 class="mt-4">The Inspiration Behind MEDIVISE</h3>
+        <p>In an era where access to instant and accurate healthcare information is critical, we embarked on a journey to develop <strong>MEDIVISE</strong>—a smart, AI-driven web application that helps users identify potential diseases based on their symptoms. By leveraging <strong>Flask</strong> for the backend and a <strong>Support Vector Classifier</strong> model, our platform provides quick, reliable, and user-friendly diagnostic insights.</p>
+
+        <h3>The Problem We Address</h3>
+        <p>Many individuals experience health symptoms but struggle to determine their severity or possible causes. Overlapping symptoms can lead to confusion, and accessing a healthcare professional immediately isn’t always feasible. Our mission with MEDIVISE is to empower users with instant, AI-powered preliminary health insights.</p>
+
+        <h3>How MEDIVISE Works</h3>
+        <p>Our web application simplifies symptom-based disease diagnosis through a seamless process:</p>
+        <ol>
+            <li><strong>Symptom Input:</strong> Users enter their symptoms through a user-friendly interface, ensuring accessibility for all.</li>
+            <li><strong>AI-Powered Diagnosis:</strong> The trained <strong>Support Vector Classifier</strong> predicts the most likely disease based on a robust dataset.</li>
+            <li><strong>Instant Predictions:</strong> The model delivers quick and accurate potential diagnoses.</li>
+            <li><strong>Comprehensive Health Insights:</strong> MEDIVISE provides detailed information on predicted diseases, including symptoms, precautions, medications, diet, and exercise recommendations.</li>
+            <!-- <li><strong>Speech Recognition:</strong> Users can enter symptoms via voice input, enhancing accessibility.</li> -->
+            <li><strong>User Records:</strong> Users can maintain health records by providing their name, age, and location for personalized insights.</li>
+        </ol>
+
+        <h3>Key Features of MEDIVISE</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Intuitive Interface:</strong> Designed for ease of use, making healthcare information accessible to everyone.</li>
+            <li class="list-group-item"><strong>Smart Input Handling:</strong> Recognizes case-insensitive inputs and symptom synonyms for accurate results.</li>
+            <li class="list-group-item"><strong>AI-Powered Predictions:</strong> Leverages machine learning for precise disease identification.</li>
+            <li class="list-group-item"><strong>In-Depth Medical Information:</strong> Offers insights into diseases, their symptoms, treatments, and preventive measures.</li>
+            <li class="list-group-item"><strong>Educational Health Content:</strong> Features informative blogs on healthcare topics for knowledge enrichment.</li>
+            <!-- <li class="list-group-item"><strong>Voice Input Integration:</strong> Enables hands-free symptom entry through speech recognition.</li> -->
+            <li class="list-group-item"><strong>Health History Tracking:</strong> Allows users to store and track their health details for future reference.</li>
+        </ul>
+
+        <h3 class="mt-4">Final Thoughts</h3>
+        <p>MEDIVISE is more than just an application—it’s a step toward revolutionizing remote healthcare solutions. By integrating AI and machine learning, we aim to make preliminary health assessments more accessible, informative, and user-friendly. With MEDIVISE, individuals can gain better awareness of their health and take proactive measures for their well-being.</p>
+        
+        <!-- Add a Call-to-Action Button -->
+        <div class="text-center">
+            <a href="javascript:window.history.back();" class="btn btn-primary btn-lg">Try MEDIVISE Now</a>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <footer style="text-align: center; padding: 20px; background-color: #fff; border-top: 1px solid #eee;">
+      <p style="margin: 0; color: #666;">&copy; 2025 Medivise. All rights reserved.</p>
+      <div class="social-links" style="margin-top: 10px;">
+          <a href="https://www.linkedin.com/in/dipesh-dhungana-3796482b3/" style="margin: 0 10px; text-decoration: none; color: #333; font-size: 18px; transition: color 0.3s;">LinkedIn</a>
+          <a href="https://github.com/iamdipesh18" style="margin: 0 10px; text-decoration: none; color: #333; font-size: 18px; transition: color 0.3s;">GitHub</a>
+          <a href="https://x.com/iamdipesh18" style="margin: 0 10px; text-decoration: none; color: #333; font-size: 18px; transition: color 0.3s;">Twitter</a>
+      </div>
+    </footer>
+  
+  </body>
+</html>

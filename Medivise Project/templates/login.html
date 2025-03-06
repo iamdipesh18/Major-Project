@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://raw.githubusercontent.com/Giphy/GiphyAPI/master/api_giphy_header.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #8d03e9;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 style="color: black; font-size: 32px; margin-bottom: 20px;">MEDIVISE</h1>
+        <h2 style="margin-bottom: 20px; color: #333;">Login</h2>
+        <form action="{{ url_for('login') }}" method="post">
+            <div class="input-group" style="margin-bottom: 20px; text-align: left;">
+                <label for="username" style="display: block; margin-bottom: 5px; color: #666;">Username</label>
+                <input type="text" id="username" name="username" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; transition: border-color 0.3s;">
+            </div>
+            <div class="input-group" style="margin-bottom: 20px; text-align: left;">
+                <label for="password" style="display: block; margin-bottom: 5px; color: #666;">Password</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; transition: border-color 0.3s;">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
